@@ -4,6 +4,8 @@
     align-items: center;
     margin: 0px 25px 0px 25px;
     gap: 5vw;
+    justify-content: center;
+    height: 60px;
 }
 
 .logo{
@@ -28,13 +30,16 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    position: relative;
+    padding-bottom: 15px;
 }
 
 .buttonContainer button a{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
     gap: 3px;
 }
+
+

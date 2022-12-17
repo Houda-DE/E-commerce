@@ -3,12 +3,65 @@ import styles from './styles.module.css'
 import {BiSearch , BiUser , BiHeart , BiShoppingBag} from 'react-icons/bi'
 import {AiOutlineDown} from 'react-icons/ai'
 import {useState} from 'react'
+import DropDownPopup from '../DropDownPopup'
 
 const Navbar = () => {
 
     const [showCategories , setShowCategories] = useState(false)
     const [showProducts , setShowProducts] = useState(false)
     const [showPages , setShowPages] = useState(false)
+
+    const data = [
+        {
+            title : {
+                name : 'Khoudra',
+                link : '/'
+            },
+            elements : [
+                {
+                    name : 'batata',
+                    link : '/'
+                },
+                {
+                    name : 'bsal',
+                    link : '/'
+                },
+                {
+                    name : 'zroudia',
+                    link : '/'
+                },
+                {
+                    name : 'felfel',
+                    link : '/'
+                }
+            ]
+        },
+        {
+            title : 
+                {
+                    name : 'mwa3en',
+                    link : '/'
+                },
+            elements : [
+                {
+                    name : 'kisan',
+                    link : '/'
+                },
+                {
+                    name : 'mgharef',
+                    link : '/'
+                },
+                {
+                    name : 'basinat',
+                    link : '/'
+                },
+                {
+                    name : 'baliya',
+                    link : '/'
+                }
+            ]
+        }
+    ]
 
     return(
         <div className={styles.container}>
@@ -23,7 +76,13 @@ const Navbar = () => {
                             <label>Categories</label>
                             <AiOutlineDown/>
                         </a>
-                        {showCategories === true ? <div>coucou</div> :''}
+                        {
+                            showCategories === true ? 
+                                <div>
+                                    <DropDownPopup data={data}/>
+                                </div> 
+                                :''
+                        }
                     </button>
                     <button onMouseOver={(e) => {e.preventDefault ; setShowProducts(true)}} onMouseOut={(e) => {e.preventDefault ; setShowProducts(false)}}>
                         <a>

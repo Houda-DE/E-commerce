@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 25px 0px 25px;
+    gap: 5vw;
+}
+
+.logo{
+    height: 35px;
+    object-fit: cover;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.buttonContainer button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.buttonContainer button a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}

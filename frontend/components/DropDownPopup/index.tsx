@@ -1,16 +1,16 @@
 import styles from './styles.module.css'
 
-const DropDownPopup = ({data}) => {
+const DropDownPopup = ({data}:any) => {
     return(
         <div className={styles.container}>
             {
-                data.map((element , index) => {
+                data.map((element : any , index : number) => {
                     return(
                         <div>
                             <div>
                                 <div className={styles.titles}>{element.title.name}</div>
                                 {
-                                    element.elements.map((el , i) => {
+                                    element.elements.map((el : any , i : number) => {
                                         return(
                                             <div>{el.name}</div>
                                         )

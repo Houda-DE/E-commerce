@@ -3,7 +3,8 @@ import styles from './styles.module.css'
 import {BiSearch , BiUser , BiHeart , BiShoppingBag} from 'react-icons/bi'
 import {AiOutlineDown} from 'react-icons/ai'
 import {useState} from 'react'
-import DropDownPopup from '../DropDownPopup'
+import DropDownPopup from '../DropDownPopup/index'
+import data from '../../json/CategoriesData.json'
 
 const Navbar = () => {
 
@@ -11,57 +12,9 @@ const Navbar = () => {
     const [showProducts , setShowProducts] = useState(false)
     const [showPages , setShowPages] = useState(false)
 
-    const data = [
-        {
-            title : {
-                name : 'Khoudra',
-                link : '/'
-            },
-            elements : [
-                {
-                    name : 'batata',
-                    link : '/'
-                },
-                {
-                    name : 'bsal',
-                    link : '/'
-                },
-                {
-                    name : 'zroudia',
-                    link : '/'
-                },
-                {
-                    name : 'felfel',
-                    link : '/'
-                }
-            ]
-        },
-        {
-            title : 
-                {
-                    name : 'mwa3en',
-                    link : '/'
-                },
-            elements : [
-                {
-                    name : 'kisan',
-                    link : '/'
-                },
-                {
-                    name : 'mgharef',
-                    link : '/'
-                },
-                {
-                    name : 'basinat',
-                    link : '/'
-                },
-                {
-                    name : 'baliya',
-                    link : '/'
-                }
-            ]
-        }
-    ]
+    const cat = Object.assign(data.categories)
+    console.log({cat})
+    console.log(typeof(cat))
 
     return(
         <div className={styles.container}>
@@ -71,7 +24,7 @@ const Navbar = () => {
             <IconContext.Provider value={{size : '16px'}}>
                 <div className={styles.buttonContainer}>
                     <button>Home</button>
-                    <button onMouseOver={(e) => {e.preventDefault ; setShowCategories(true)}} onMouseOut={(e) => {e.preventDefault ; setShowCategories(false)}}>
+                    <button onMouseOver={(e) => {e.preventDefault() ; setShowCategories(true)}} onMouseOut={(e) => {e.preventDefault() ; setShowCategories(false)}}>
                         <a>
                             <label>Categories</label>
                             <AiOutlineDown/>
@@ -79,7 +32,7 @@ const Navbar = () => {
                         {
                             showCategories === true ? 
                                 <div>
-                                    <DropDownPopup data={data}/>
+                                    <DropDownPopup data = {cat}/>
                                 </div> 
                                 :''
                         }

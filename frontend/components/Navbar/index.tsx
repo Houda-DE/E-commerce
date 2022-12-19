@@ -5,16 +5,16 @@ import {AiOutlineDown} from 'react-icons/ai'
 import {useState} from 'react'
 import DropDownPopup from '../DropDownPopup/index'
 import data from '../../json/CategoriesData.json'
+import Search from '../Search'
 
 const Navbar = () => {
 
     const [showCategories , setShowCategories] = useState(false)
     const [showProducts , setShowProducts] = useState(false)
     const [showPages , setShowPages] = useState(false)
+    const [openSearch , setOpenSearch] = useState(false)
 
     const cat = Object.assign(data.categories)
-    console.log({cat})
-    console.log(typeof(cat))
 
     return(
         <div className={styles.container}>
@@ -42,31 +42,50 @@ const Navbar = () => {
                             <label>Products</label>
                             <AiOutlineDown/>
                         </a>
+                        {
+                            showProducts === true ? 
+                                <div>
+                                    <DropDownPopup data = {cat}/>
+                                </div> 
+                                :''
+                        }
                     </button>
                     <button onMouseOver={(e) => {e.preventDefault ; setShowPages(true)}} onMouseOut={(e) => {e.preventDefault ; setShowPages(false)}}>
                         <a>
                             <label>Pages</label>
                             <AiOutlineDown/>
                         </a>
+                        {
+                            showPages === true ? 
+                                <div>
+                                    <DropDownPopup data = {cat}/>
+                                </div> 
+                                :''
+                        }
                     </button>
                 </div>
             </IconContext.Provider>
             {/*Icons container*/}
-            <div style={{display : 'flex' , flexDirection : 'row' , gap : '15px'}}>
+            <div className={styles.iconButton} style={{display : 'flex' , flexDirection : 'row' , gap : '15px'}}>
                 <IconContext.Provider value={{size : '30px'}}>
-                    <a>
+                    <button onClick = {(e) => {e.preventDefault() ; setOpenSearch(!openSearch)}}>
                         <BiSearch title='Search'/>
-                    </a>
-                    <a>
+                    </button>
+                    <button>
                         <BiUser title='My account'/>
-                    </a>
-                    <a>
+                    </button>
+                    <button>
                         <BiHeart title='Wishlist'/>
-                    </a>
-                    <a>
+                    </button>
+                    <button>
                         <BiShoppingBag/>
-                    </a>
+                    </button>
                 </IconContext.Provider>
+                {
+                    openSearch === true ?
+                        <Search/>
+                    : ""
+                }
             </div>
         </div>
     )

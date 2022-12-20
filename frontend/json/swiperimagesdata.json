@@ -1,0 +1,16 @@
+{
+    "swiper" : [
+        {
+            "imageUrl" : "swp1.jpg",
+            "productUrl" : "/"
+        },
+        {
+            "imageUrl" : "swp2.jpg",
+            "productUrl" : "/"
+        },
+        {
+            "imageUrl" : "swp3.jpg",
+            "productUrl" : "/"
+        }
+    ]
+}

@@ -7,7 +7,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 98vw;
+    width: 97vw;
+    margin : 40px 8px;
 }
 
 .categoriesContainer{
@@ -22,14 +23,34 @@
 .categoryContainer{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     justify-content: center;
+    margin: 0px 15px;
+    border: 2px solid red;
 }
 
 .categoryContainer img{
-    height: 200px;
-    width: 200px;
+    height: fit-content;
     object-fit: cover;
+    border-radius:20px;
+    background-color: lightgray;
+}
+
+.categoriesContainer button{
+    font-size: 35px;
+    border: none;
+    color : none;
+    background-color: transparent;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.categoriesContainer button:hover{
     background-color: lightgray;
 }

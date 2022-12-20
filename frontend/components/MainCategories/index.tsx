@@ -1,27 +1,29 @@
 import styles from './styles.module.css'
 import {Carousel} from 'react-responsive-carousel'
 import { useState } from 'react'
+import {GrNext , GrPrevious} from 'react-icons/gr'
 
 const MainCategories = ({data} : any) => {
 
     const displayCount = 5
-
-    const [currentIndex , setCurrentIndex] = useState(1)
+    const [currentIndex , setCurrentIndex] = useState(2)
 
     return(
         <div className={styles.container}>
             <h2>Main categories</h2>
             <div className={styles.categoriesContainer}>
-                <button onClick={() => setCurrentIndex((currentIndex - 5 + data.length) % data.length)} style={{fontSize : '50px'}}>+</button>
+                <button onClick={() => {currentIndex === 2 ? setCurrentIndex(6) :setCurrentIndex((currentIndex - 1) % data.length)}}>
+                    <GrPrevious title = {'Previous'}/>
+                </button>
                 <Carousel 
                     centerMode
-                    centerSlidePercentage={20}
+                    centerSlidePercentage={18}
                     selectedItem={currentIndex}
                     showArrows={false}
-                    autoPlay 
                     interval={2000} 
+                    showIndicators={false}
                     transitionTime={700} 
-                    infiniteLoop 
+                    infiniteLoop={false}
                     showStatus={false} 
                     showThumbs={false}
                 >
@@ -30,14 +32,17 @@ const MainCategories = ({data} : any) => {
                             return(
                                 <div className={styles.categoryContainer}>
                                     <img src={element.associatedImageUrl}/>
-                                    <h4>{element.name}</h4>
+                                    <div>{element.name}</div>
                                     <div>{element.quantity}</div>
+                                    <div>{index}</div>
                                 </div> 
                             )
                         })
                     }
                 </Carousel>
-                <button onClick={() => setCurrentIndex((currentIndex + 5 + data.length) % data.length)} style={{fontSize : '50px'}}>*</button>
+                <button onClick={() => {currentIndex === 6 ? setCurrentIndex(2) : setCurrentIndex((currentIndex + 1) % (data.length - 2))}}>
+                    <GrNext title='Next'/>
+                </button>
             </div>
         </div>
     )

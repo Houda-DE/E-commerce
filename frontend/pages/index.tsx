@@ -1,16 +1,17 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Navbar from '../components/Navbar/index'
-import styles from '../styles/Home.module.css'
 import Slider from '../components/Slider'
 import SwiperData from "../json/swiperimagesdata.json"
+import MainCategoriesData from "../json/MainCategoriesData.json"
+import MainCategories from '../components/MainCategories'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
   const swiperData = Object.assign(SwiperData.swiper)
+  const MainCategorie = Object.assign(MainCategoriesData.categories)
 
   return (
     <>
@@ -23,6 +24,7 @@ export default function Home() {
         <body style={{margin : '0px' ,padding : '0px'}}>
           <Navbar/>
           <Slider data={swiperData}/>
+          <MainCategories data={MainCategorie}/>
         </body>
       </main>
     </>

@@ -2,15 +2,18 @@
     "swiper" : [
         {
             "imageUrl" : "swp1.jpg",
-            "productUrl" : "/"
+            "productUrl" : "/",
+            "buttonColor" : "white"
         },
         {
             "imageUrl" : "swp2.jpg",
-            "productUrl" : "/"
+            "productUrl" : "/",
+            "buttonColor" : "black"
         },
         {
             "imageUrl" : "swp3.jpg",
-            "productUrl" : "/"
+            "productUrl" : "/",
+            "buttonColor" : "white"
         }
     ]
 }

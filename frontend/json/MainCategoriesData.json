@@ -1,0 +1,49 @@
+{
+    "categories" : [
+        {
+            "name" : "Food",
+            "associatedImageUrl" : "food.jpg",
+            "quantity" : "5000"
+        },
+        {
+            "name" : "Electronique",
+            "associatedImageUrl" : "electromenager.jpg",
+            "quantity" : "5000"
+        },
+        {
+            "name" : "Parfum",
+            "associatedImageUrl" : "food.jpg",
+            "quantity" : "123"
+        },
+        {
+            "name" : "Clothes",
+            "associatedImageUrl" : "clothes.jpg",
+            "quantity" : "5780"
+        },
+        {
+            "name" : "Skin care",
+            "associatedImageUrl" : "electromenager.jpg",
+            "quantity" : "120"
+        },
+        {
+            "name" : "Electroménager",
+            "associatedImageUrl" : "clothes.jpg",
+            "quantity" : "7000"
+        },
+        {
+            "name" : "Clothes",
+            "associatedImageUrl" : "clothes.jpg",
+            "quantity" : "5780"
+        },
+        {
+            "name" : "Skin care",
+            "associatedImageUrl" : "electromenager.jpg",
+            "quantity" : "120"
+        },
+        {
+            "name" : "Electroménager",
+            "associatedImageUrl" : "clothes.jpg",
+            "quantity" : "7000"
+        }
+    ]
+}

@@ -1,6 +1,6 @@
 const Card = () => {
     return(
-        <div>122</div>
+        <div>122122</div>
     )
 }
 export default Card

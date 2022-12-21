@@ -2,7 +2,7 @@
     "categories" : [
         {
             "name" : "Food",
-            "associatedImageUrl" : "food.jpg",
+            "associatedImageUrl" : "electromenager.jpg",
             "quantity" : "5000"
         },
         {
@@ -12,7 +12,7 @@
         },
         {
             "name" : "Parfum",
-            "associatedImageUrl" : "food.jpg",
+            "associatedImageUrl" : "clothes.jpg",
             "quantity" : "123"
         },
         {

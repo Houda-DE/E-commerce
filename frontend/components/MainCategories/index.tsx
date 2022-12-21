@@ -17,13 +17,14 @@ const MainCategories = ({data} : any) => {
                 </button>
                 <Carousel 
                     centerMode
+                    autoPlay = {true}
                     centerSlidePercentage={18}
                     selectedItem={currentIndex}
                     showArrows={false}
                     interval={2000} 
                     showIndicators={false}
                     transitionTime={700} 
-                    infiniteLoop={false}
+                    infiniteLoop={true}
                     showStatus={false} 
                     showThumbs={false}
                 >
@@ -32,9 +33,8 @@ const MainCategories = ({data} : any) => {
                             return(
                                 <div className={styles.categoryContainer}>
                                     <img src={element.associatedImageUrl}/>
-                                    <div>{element.name}</div>
-                                    <div>{element.quantity}</div>
-                                    <div>{index}</div>
+                                    <div id={styles['name']}>{element.name}</div>
+                                    <div id={styles['quantity']}>{element.quantity}</div>
                                 </div> 
                             )
                         })

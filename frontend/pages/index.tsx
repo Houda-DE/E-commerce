@@ -5,6 +5,7 @@ import Slider from '../components/Slider'
 import SwiperData from "../json/swiperimagesdata.json"
 import MainCategoriesData from "../json/MainCategoriesData.json"
 import MainCategories from '../components/MainCategories'
+import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 

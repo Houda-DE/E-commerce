@@ -4,7 +4,7 @@
             "name" : "Croissant",
             "imageUrl" : "prod1.jpg",
             "price" : 50 ,
-            "addedToWishList" : true,
+            "addedToWishList" : false,
             "reductionPercentage" : 0,
             "rating" : 80
         },
@@ -28,7 +28,7 @@
             "name" : "Croissant",
             "imageUrl" : "prod1.jpg",
             "price" : 50 ,
-            "addedToWishList" : true,
+            "addedToWishList" : false,
             "reductionPercentage" : 0,
             "rating" : 80
         },
@@ -44,7 +44,7 @@
             "name" : "Pomme",
             "imageUrl" : "prod3.jpg",
             "price" : 450 ,
-            "addedToWishList" : true,
+            "addedToWishList" : false,
             "reductionPercentage" : 30,
             "rating" : 98
         },
@@ -68,7 +68,7 @@
             "name" : "Pomme",
             "imageUrl" : "prod3.jpg",
             "price" : 450 ,
-            "addedToWishList" : true,
+            "addedToWishList" : false,
             "reductionPercentage" : 30,
             "rating" : 98
         },

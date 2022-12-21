@@ -9,7 +9,14 @@ const Slider = ({data} : any) => {
     const color = "white"
     
     return(
-        <Carousel autoPlay interval={3000} transitionTime={700} infiniteLoop showStatus={false} showThumbs={false}>
+        <Carousel 
+            autoPlay 
+            interval={3000} 
+            transitionTime={700} 
+            infiniteLoop 
+            showStatus={false} 
+            showThumbs={false}
+        >
             {
                 data.map((element : any , index : number) => {
                     return(

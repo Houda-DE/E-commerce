@@ -25,14 +25,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <body style={{margin : '0px' ,padding : '0px'}}>
+        <body className={styles.container}>
           <Navbar/>
           <Slider data={swiperData}/>
           <MainCategories data={MainCategorie}/>
           {/*Best products section */}
           <>
             <h2>Best Selling Product</h2>
-            <div>
+            <div className={styles.cardsContainer}>
               {
                 bestProducts.map((element : any , index : number) => {
                   return(

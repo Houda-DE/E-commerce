@@ -5,6 +5,8 @@ import Slider from '../components/Slider'
 import SwiperData from "../json/swiperimagesdata.json"
 import MainCategoriesData from "../json/MainCategoriesData.json"
 import MainCategories from '../components/MainCategories'
+import Products from '../json/Products.json'
+import ProductCard from '../components/ProductCard'
 import styles from '../styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -13,6 +15,7 @@ export default function Home() {
 
   const swiperData = Object.assign(SwiperData.swiper)
   const MainCategorie = Object.assign(MainCategoriesData.categories)
+  const bestProducts = Object.assign(Products.products)
 
   return (
     <>
@@ -26,6 +29,19 @@ export default function Home() {
           <Navbar/>
           <Slider data={swiperData}/>
           <MainCategories data={MainCategorie}/>
+          {/*Best products section */}
+          <>
+            <h2>Best Selling Product</h2>
+            <div>
+              {
+                bestProducts.map((element : any , index : number) => {
+                  return(
+                    <ProductCard name = {element.name} imageUrl = {element.imageUrl}  price = {element.price} reductionPercentage = {element.reductionPercentage}  addedToWishList = {element.addedToWishList}  rating = {element.rating}/>
+                  )
+                })
+              }
+            </div>
+          </>
         </body>
       </main>
     </>

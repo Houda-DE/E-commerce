@@ -1,0 +1,124 @@
+{
+    "products" : [
+        {
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        },
+        {
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        },
+        {
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        },
+        {
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        },
+        {
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        }
+    ]
+}

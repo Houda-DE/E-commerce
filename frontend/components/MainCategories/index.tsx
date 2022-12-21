@@ -17,14 +17,13 @@ const MainCategories = ({data} : any) => {
                 </button>
                 <Carousel 
                     centerMode
-                    autoPlay = {true}
                     centerSlidePercentage={18}
                     selectedItem={currentIndex}
                     showArrows={false}
                     interval={2000} 
                     showIndicators={false}
                     transitionTime={700} 
-                    infiniteLoop={true}
+                    infiniteLoop={false}
                     showStatus={false} 
                     showThumbs={false}
                 >

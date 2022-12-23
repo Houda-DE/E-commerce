@@ -2,7 +2,7 @@ import { IconContext } from 'react-icons'
 import styles from './styles.module.css'
 import {BiSearch , BiUser , BiHeart , BiShoppingBag} from 'react-icons/bi'
 import {AiOutlineDown} from 'react-icons/ai'
-import {useState} from 'react'
+import {useState , useEffect} from 'react'
 import DropDownPopup from '../DropDownPopup/index'
 import data from '../../json/CategoriesData.json'
 import Search from '../Search'
@@ -13,11 +13,26 @@ const Navbar = () => {
     const [showProducts , setShowProducts] = useState(false)
     const [showPages , setShowPages] = useState(false)
     const [openSearch , setOpenSearch] = useState(false)
+    const [scroll , setScroll] = useState(window.scrollY)
+
+    useEffect(() => {
+      const handleScroll = () => {
+        setScroll(window.scrollY)
+      }
+      window.addEventListener("scroll" , handleScroll)
+    
+      return () => {
+        window.removeEventListener("scroll" , handleScroll)
+      }
+    }, [scroll])
+    
 
     const cat = Object.assign(data.categories)
 
+
+
     return(
-        <div className={styles.container}>
+        <div style={{backgroundColor : `${scroll > window.innerHeight ? 'white' : "transparent"}` , boxShadow :  `${scroll > window.innerHeight ? 'rgba(0, 0, 0, 0.35) 0px 5px 15px' : ""}`}} className={styles.container}>
             {/*Logo container*/}
             <img src='vercel.svg' className={styles.logo}/>
             {/*Links container*/}

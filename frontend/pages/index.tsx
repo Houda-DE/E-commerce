@@ -9,6 +9,7 @@ import Products from '../json/Products.json'
 import ProductCard from '../components/ProductCard'
 import styles from '../styles/Home.module.css'
 import { useState  , useEffect} from 'react'
+import Footer from '../components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,15 +19,9 @@ export default function Home() {
   const swiperData = Object.assign(SwiperData.swiper)
   const MainCategorie = Object.assign(MainCategoriesData.categories)
   const bestProducts = Object.assign(Products.products)
-  const [width , setWidth] = useState(1500)
 
-  useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
-    window.addEventListener("resize", handleResize);
-    return () => {window.removeEventListener("resize", handleResize);}
-  }, [width]);
+  const [addToCart , setAddToCart] = useState([])
+  const [addToWish , setAddToWish] = useState([])
 
 
   return (
@@ -48,12 +43,13 @@ export default function Home() {
               {
                 bestProducts.map((element : any , index : number) => {
                   return(
-                  (index < 12)&&<ProductCard name = {element.name} imageUrl = {element.imageUrl}  price = {element.price} reductionPercentage = {element.reductionPercentage}  addedToWishList = {element.addedToWishList}  rating = {element.rating}/>
+                  (index < 12)&&<ProductCard key={element.id} addedToCart = {addToCart} setAddedToCart = {setAddToCart} addToWish = {addToWish} setAddToWish = {setAddToWish} id = {element.id} name = {element.name} imageUrl = {element.imageUrl}  price = {element.price} reductionPercentage = {element.reductionPercentage}  addedToWishList = {element.addedToWishList}  rating = {element.rating}/>
                   )
                 })
               }
             </div>
           </div>
+          <Footer/>
         </body>
       </main>
     </>

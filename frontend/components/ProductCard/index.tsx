@@ -4,7 +4,7 @@ import { Rating } from '@mui/material'
 import Link from 'next/link'
 import {useState} from 'react'
 
-const ProductCard = ({name , imageUrl , price , reductionPercentage , addedToWishList , rating} : any) => {
+const ProductCard = ({id ,  name , imageUrl , price , reductionPercentage , addedToWishList , rating , addToCart , setAddToCart , addToWish , setAddToWish} : any) => {
 
     const [isHovering , setIsHovering] = useState(false)
 
@@ -16,7 +16,15 @@ const ProductCard = ({name , imageUrl , price , reductionPercentage , addedToWis
                     <div style={{color : '#222529'}}>{name}</div>
                     {
                         addedToWishList === false ? 
-                            <AiOutlineHeart style={{color : '#222529'}} title='Add to wishlist'/>
+                            <button 
+                                style={{backgroundColor : 'transparent' , 'outline' : 'none' , border : 'none' , cursor : 'pointer'}}
+                                onClick = {(e : any) => {e.preventDefault() ; setAddToWish([...addToWish , id]) ; addedToWishList === true}}
+                            >
+                                <AiOutlineHeart 
+                                    style={{color : '#222529'}} 
+                                    title='Add to wishlist'
+                                />
+                            </button>
                         :   
                             <AiFillHeart style={{color : '#222529'}} title='Added to wishlist'/>
                     }
@@ -33,7 +41,7 @@ const ProductCard = ({name , imageUrl , price , reductionPercentage , addedToWis
                 }
             </Link>
             {
-                isHovering&&<button className={styles.button}>Add to cart</button>
+                isHovering&&<button onClick={(e:any) => {e.preventDefault ; addToCart.includes(id) !== true ? setAddToCart([...addToCart , id]) : ""}} className={styles.button}>Add to cart</button>
             }
         </div>
     )

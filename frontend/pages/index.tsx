@@ -10,6 +10,7 @@ import ProductCard from '../components/ProductCard'
 import styles from '../styles/Home.module.css'
 import { useState  , useEffect} from 'react'
 import Footer from '../components/Footer'
+import LandingShippingOptions from '../components/LandingShippingOptions'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,7 +38,7 @@ export default function Home() {
           <Slider data={swiperData}/>
           <MainCategories data={MainCategorie}/>
           {/*Best products section */}
-          <div style={{marginBottom : '300px' , zIndex : '100'}} className={styles.bestSellingContainer}>
+          <div className={styles.bestSellingContainer}>
             <h2>Best Selling Product</h2>
             <div className={styles.cardsContainer}>
               {
@@ -48,6 +49,9 @@ export default function Home() {
                 })
               }
             </div>
+          </div>
+          <div style={{marginBottom : '300px' , zIndex : '100'}}>
+            <LandingShippingOptions/>
           </div>
         </body>
         <Footer/>

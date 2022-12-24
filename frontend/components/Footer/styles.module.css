@@ -13,3 +13,63 @@
   align-items: flex-start;
   justify-content: center;
 }
+
+.stayConnectedAndAbout{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
+}
+
+.quickLinks{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#Link{
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+#Link:hover{
+  text-decoration: underline;
+}
+
+#Contact{
+  display: flex;
+  flex-direction: row;
+  gap : 5px;
+}
+
+.iconsContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.input{
+  height: 30px;
+  width: 240px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0px 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+}
+
+.button{
+  height: 30px;
+  width: 80px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #f9f9f9;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}

@@ -18,7 +18,7 @@ const Navbar = () => {
     useEffect(() => {
       const handleScroll = () => {
         const hasWindow = typeof window !== 'undefined'
-
+        
         if (hasWindow) {
             setScroll(window.scrollY)
         }

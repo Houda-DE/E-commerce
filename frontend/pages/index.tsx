@@ -37,7 +37,7 @@ export default function Home() {
           <Slider data={swiperData}/>
           <MainCategories data={MainCategorie}/>
           {/*Best products section */}
-          <div className={styles.bestSellingContainer}>
+          <div style={{marginBottom : '300px' , zIndex : '100'}} className={styles.bestSellingContainer}>
             <h2>Best Selling Product</h2>
             <div className={styles.cardsContainer}>
               {

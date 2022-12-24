@@ -13,11 +13,16 @@ const Navbar = () => {
     const [showProducts , setShowProducts] = useState(false)
     const [showPages , setShowPages] = useState(false)
     const [openSearch , setOpenSearch] = useState(false)
-    const [scroll , setScroll] = useState(window.scrollY)
+    const [scroll , setScroll] = useState(0)
 
     useEffect(() => {
       const handleScroll = () => {
-        setScroll(window.scrollY)
+        const hasWindow = typeof window !== 'undefined'
+
+        if (hasWindow) {
+            setScroll(window.scrollY)
+        }
+    
       }
       window.addEventListener("scroll" , handleScroll)
     
@@ -32,7 +37,7 @@ const Navbar = () => {
 
 
     return(
-        <div style={{backgroundColor : `${scroll > window.innerHeight ? 'white' : "transparent"}` , boxShadow :  `${scroll > window.innerHeight ? 'rgba(0, 0, 0, 0.35) 0px 5px 15px' : ""}`}} className={styles.container}>
+        <div style={{backgroundColor : `${scroll > 500 ? 'white' : "transparent"}` , boxShadow :  `${scroll > 500 ? 'rgba(0, 0, 0, 0.35) 0px 5px 15px' : ""}`}} className={styles.container}>
             {/*Logo container*/}
             <img src='vercel.svg' className={styles.logo}/>
             {/*Links container*/}

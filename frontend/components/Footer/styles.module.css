@@ -1,9 +1,15 @@
 .container{
-    bottom: 0;
-    width: 70vw;
-    height: 350px;  
-    padding-left: 50px;
-    font-size: 100px;
-    color: #F56469;
-    z-index: -1;
-  }
+  position: fixed;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 300px;
+  background-color: #222529;
+  z-index: -1;
+  bottom: 0;
+  width: 100%;
+  padding: 0px 50px;
+  color: white;
+  display: grid;
+  grid-template-columns: 25% 25% 50%;
+  align-items: flex-start;
+  justify-content: center;
+}

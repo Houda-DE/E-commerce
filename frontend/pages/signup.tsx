@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Button from '../components/Button'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Login.module.css'
+import { Alert } from '@mui/material'
 
 const Login = () => {
 
@@ -23,7 +24,7 @@ const Login = () => {
             return alert ('password and confir pass are not identique')
         }
         else{
-            return alert('Sucess')
+            return <Alert severity="success">Your account is created</Alert>
         }
     }
 
@@ -60,7 +61,7 @@ const Login = () => {
                     </div>
                     <div>
                         <div style={{marginBottom : '10px'}}>You have an account ?</div>
-                        <Link id={styles['Link']} href='/costumer/signup'>Login</Link>
+                        <Link id={styles['Link']} href='/login'>Login</Link>
                     </div>
                     <Button typeof = 'submit' type = 'primary' height = '35px' width = '120px' name = 'Sign up'/>
                 </form>

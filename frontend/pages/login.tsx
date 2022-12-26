@@ -30,7 +30,7 @@ const Login = () => {
                     </div>
                     <div>
                         <div style={{marginBottom : '10px'}}>You don't have an account ?</div>
-                        <Link id={styles['Link']} href='/costumer/signup'>Sign up</Link>
+                        <Link id={styles['Link']} href='/signup'>Sign up</Link>
                     </div>
                     <Button typeof = 'submit' type = 'primary' height = '35px' width = '120px' name = 'Login'/>
                 </form>

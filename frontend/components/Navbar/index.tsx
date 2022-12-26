@@ -6,6 +6,7 @@ import {useState , useEffect} from 'react'
 import DropDownPopup from '../DropDownPopup/index'
 import data from '../../json/CategoriesData.json'
 import Search from '../Search'
+import Link from 'next/link'
 
 const Navbar = () => {
 
@@ -91,9 +92,9 @@ const Navbar = () => {
                     <button onClick = {(e) => {e.preventDefault() ; setOpenSearch(!openSearch)}}>
                         <BiSearch title='Search'/>
                     </button>
-                    <button>
+                    <Link href='/login' style = {{color : 'black'}}>
                         <BiUser title='My account'/>
-                    </button>
+                    </Link>
                     <button>
                         <BiHeart title='Wishlist'/>
                     </button>

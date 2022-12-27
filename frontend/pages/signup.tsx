@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Button from '../components/Button'
 import Navbar from '../components/Navbar'
 import styles from '../styles/Login.module.css'
@@ -11,26 +11,32 @@ const Login = () => {
     const [email , setEmail] = useState('')
     const [password , setPassword] = useState('')
     const [confirmPass , setConfirmPass] = useState('')
+    const [submit , setSubmit] = useState(false)
+    const [validForm , setValidForm] = useState(false)
 
     const formSubmit = (e : any) => {
         e.preventDefault()
-        if(userName === '' || email === '' || password === '' || confirmPass === ''){
-            return alert('A required field is missing')
-        }
-        else if(!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)){
-            return alert('invalid email')
-        }
-        else if(password !== confirmPass){
-            return alert ('password and confir pass are not identique')
-        }
-        else{
-            return <Alert severity="success">Your account is created</Alert>
+        setSubmit(true)
+        if((userName === '' || email === '' || password === '' || confirmPass === '') === false || !(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) === false || (password !== confirmPass) === false){
+            setValidForm(true)
         }
     }
 
     return(
         <div className={styles.container}>
             <Navbar/>
+            <div className={styles.alertContainer}>
+                    {
+                        submit&&(userName === '' || email === '' || password === '' || confirmPass === '' ? 
+                            <Alert severity='error'>A required field is missing</Alert>
+                        : /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) !== true ? 
+                            <Alert severity='error'>You have entered an invalid email address</Alert>
+                        : password !== confirmPass ? 
+                            <Alert>Password and it's confirmation are not identique</Alert>
+                        : ''
+                        )
+                    }
+                </div>
             <div className={styles.loginContainer}>
                 <img style = {{paddingTop : '100px'}} src='signup.webp'/>
                 <form onSubmit={(e : any) => formSubmit(e)} className={styles.formContainer}>

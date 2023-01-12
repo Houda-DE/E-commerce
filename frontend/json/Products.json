@@ -1,0 +1,139 @@
+{
+    "products" : [
+        {
+            "id" : 1,
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : false,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "id" : 2,
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "id" : 3,
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        },
+        {
+            "id" : 4,
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : false,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "id" : 5,
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "id" : 6,
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : false,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        },
+        {
+            "id" : 7,
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "id" : 8,
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "id" : 9,
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : false,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        },
+        {
+            "id" : 10,
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "id" : 11,
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "id" : 12,
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        },
+        {
+            "id" : 13,
+            "name" : "Croissant",
+            "imageUrl" : "prod1.jpg",
+            "price" : 50 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 0,
+            "rating" : 80
+        },
+        {
+            "id" : 14,
+            "name" : "Gateau",
+            "imageUrl" : "prod2.jpg",
+            "price" : 480.00 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 60,
+            "rating" : 55
+        },
+        {
+            "id" : 15,
+            "name" : "Pomme",
+            "imageUrl" : "prod3.jpg",
+            "price" : 450 ,
+            "addedToWishList" : true,
+            "reductionPercentage" : 30,
+            "rating" : 98
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+.container{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 97vw;
+    margin : 40px 8px;
+}
+
+.categoriesContainer{
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    justify-content: center;
+    align-items: center;
+    gap : 20px;
+}
+
+.categoryContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 15px;
+    border: 1px ;
+    position: relative;
+    padding: 0px 0px 8px 0px;
+}
+
+.categoryContainer:hover::after{
+    content: "";
+    background: rgba(27 , 27 , 23 , 0.05);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.categoryContainer > img{
+    height: fit-content;
+    object-fit: cover;
+}
+
+.categoriesContainer button{
+    font-size: 35px;
+    border: none;
+    color : none;
+    background-color: transparent;
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#name{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#quantity{
+    color: darkgray;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.categoriesContainer button:hover{
+    background-color: lightgray;
+}

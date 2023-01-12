@@ -1,0 +1,51 @@
+{
+    "categories" : [
+        {
+            "title" : {
+                "name" : "Khoudra",
+                "link" : "/"
+            },
+        "elements" : [
+            {
+                "name" : "batata",
+                "link" : "/"
+            },
+            {
+                "name" : "bsal moumous",
+                "link" : "/"
+            },
+            {
+                "name" : "zroudia bsal",
+                "link" : "/"
+            },
+            {
+                "name" : "felfel",
+                "link" : "/"
+            }
+        ]
+    },
+    {
+        "title" : {
+            "name" : "Khoudra",
+            "link" : "/"
+        },
+        "elements" : [
+            {
+                "name" : "batata",
+                "link" : "/"
+            },
+            {
+                "name" : "bsal",
+                "link" : "/"
+            },
+            {
+                "name" : "zroudia",
+                "link" : "/"
+            },
+            {
+                "name" : "felfel",
+                "link" : "/"
+            }
+        ]
+    }]
+}

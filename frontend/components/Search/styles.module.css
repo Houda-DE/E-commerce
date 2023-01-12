@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #ccc;
+    position: absolute;
+    top : 80px;
+    right: 20%;
+    border-radius: 50px;
+   padding : 0px 8px;
+    gap : 12px
+}
+
+.container input{
+    height: 30px;
+    width: 170px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.filterButton{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    color: darkgray;
+    font-size: 15px;
+    padding : 0px 6px;
+}

@@ -1,0 +1,69 @@
+.container{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #222529;
+}
+
+.loginContainer{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+
+.image{
+    height: 90vh;
+    width: fit-content;
+    object-fit: contain;
+}
+
+.formContainer{
+    height: 500px;
+    width: 300px;
+    position: absolute;
+    top: 150px;
+    left: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+}
+
+.input{
+    height: 35px;
+    width: 225px;
+    padding: 0px 5px;
+    border: 1px solid darkgray;
+    outline: none;
+    border-radius: 5px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    align-items: center;
+}
+
+#Link{
+    color : #222529;
+    text-decoration: none;
+}
+
+#Link:hover{
+    text-decoration: underline;
+}
+
+.alertContainer{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}

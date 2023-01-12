@@ -1,0 +1,19 @@
+{
+    "swiper" : [
+        {
+            "imageUrl" : "swp1.jpg",
+            "productUrl" : "/",
+            "buttonColor" : "white"
+        },
+        {
+            "imageUrl" : "swp2.jpg",
+            "productUrl" : "/",
+            "buttonColor" : "black"
+        },
+        {
+            "imageUrl" : "swp3.jpg",
+            "productUrl" : "/",
+            "buttonColor" : "white"
+        }
+    ]
+}

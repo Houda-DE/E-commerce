@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100vw;
+    width: 100vw;
+    height: 60px;
+    gap: 5vw;
+    z-index: 1000;
+    justify-content: center;
+    height: 60px;
+    position: fixed;
+   
+}
+
+.logo{
+    height: 35px;
+    object-fit: cover;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.buttonContainer button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;  
+}
+
+.buttonContainer button a{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.iconButton button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+

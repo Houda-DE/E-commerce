@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    gap: 6px;
+    width: 160px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
+.container img{
+    height: 160px;
+    width: 160px;
+    object-fit: cover;
+}
+
+.nameAndWishListContainer{
+    display: grid;
+    gap: auto;
+    grid-template-columns: auto auto;
+}
+
+.nameAndWishListContainer:nth-child(1){
+    font-size: 15px;
+    font-weight: 700;
+    color: #222529;
+}
+
+.reductionContainer{
+    display: flex;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444444;
+    align-items: flex-end;
+    
+}
+
+#oldPrice{
+    font-size: 14px;
+    color: darkgray;
+    text-decoration: line-through;
+}
+
+.button{
+    height: 35px;
+    background-color: #222529;
+    font-size: 16px;
+    color : white;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: black;
+}

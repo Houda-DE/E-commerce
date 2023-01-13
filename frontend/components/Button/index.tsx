@@ -4,7 +4,7 @@ const Button = ({height , width , type , name , typeofButton} : any) => {
     return(
         <div>
             {
-                type === '' ? 
+                type === 'primary' ? 
                     <button className={styles.primary} type={typeofButton} style={{height : `${height}` , width : `${width}`}}>{name}</button>
                 : type === 'second' ? 
                     <button type={typeofButton} style={{height : `${height}` , width : `${width}`}}>{name}</button>
